@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+/*jslint node: true */
+"use strict";
+
+var mkLib = require('../src/mkLib'),
+	args = process.argv.slice(2),
+	input = args[0],
+	output = args[1],
+	license = args[2],
+	requireRegex = new RegExp('\\t*(.*)require\\s*\\((\'|")(.+)(\'|")\\)(,|;)');
+
+mkLib(input, output, license);

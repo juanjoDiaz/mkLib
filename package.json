@@ -1,0 +1,33 @@
+{
+  "name": "mkLib",
+  "version": "0.0.1",
+  "description": "Small and simple library to build your CommonJS/Node modules in a single file that can be used by the browser",
+  "keywords": [
+    "library",
+    "builder",
+    "modules"
+  ],
+  "license": "MIT",
+  "author": "Juanjo Diaz <juanjo.diazmo@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juanjoDiaz/mkLib"
+  },
+  "bugs": { 
+    "url" : "https://github.com/mkLib/issues",
+    "email" : "juanjo.diazmo@gmail.com"
+  },
+  "main": "src/mkLib.js",
+  "dependencies": {
+    "js-beautify": "^1.5.5",
+    "uglify-js": "^2.4.20"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "mkLib" : "bin/mkLib"
+  }
+}
